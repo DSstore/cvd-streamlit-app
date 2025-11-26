@@ -177,10 +177,9 @@ with tab_pred:
 
         st.markdown(f"**Risk category:** {risk_color} **{risk_label}**")
 
-        c1, c2, c3 = st.columns(3)
-        c1.metric("BMI", f"{bmi:.1f}")
-        c2.metric("Mean Arterial Pressure (MAP)", f"{map_value:.0f} mmHg")
-        c3.metric("SBP / DBP", f"{ap_hi}/{ap_lo} mmHg")
+        c1, c2 = st.columns(2)
+        c1.metric("BMI(Normal range: 18.5-24.9)", f"{bmi:.1f}")
+        c2.metric("MAP(Normal range: 70-100mmHg)", f"{map_value:.0f} mmHg")
 
         st.info(
             "This tool is for educational purposes only and does **not** replace "
