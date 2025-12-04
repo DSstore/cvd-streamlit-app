@@ -48,7 +48,7 @@ st.title("🫀 Cardiovascular Disease Risk Predictor")
 st.markdown(
     """
     Estimate the probability of cardiovascular disease using clinical and 
-    lifestyle indicators. This demo is powered by your trained **XGBoost** model.
+    lifestyle indicators. This demo is powered by trained **XGBoost** model.
     """
 )
 
@@ -140,8 +140,7 @@ st.sidebar.markdown("---")
 predict_button = st.sidebar.button("🔮 Predict risk")
 
 st.sidebar.caption(
-    "Note: This tool is for educational purposes and does **not** replace with"
-    "professional medical advice."
+    "Note: This tool is for educational purposes and does **not** replace with professional medical advice."
 )
 tab_pred, tab_about = st.tabs(["📊 Prediction", "ℹ️ About this app"])
 
